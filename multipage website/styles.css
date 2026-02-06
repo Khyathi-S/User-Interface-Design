@@ -1,0 +1,40 @@
+
+body {
+    background-image: url('image4.webp');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: rgb(57, 56, 56);
+    font-size:28px;
+  
+    
+  }
+  
+  h2{
+    color: #451111;
+
+    border-style: dotted;
+  border-color: rgb(1, 14, 19);
+  }
+  h1{
+    color: #030202;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .button {
+    background-color: #9986867e;
+    border:none;
+    color: rgb(12, 1, 1);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  footer{
+    background-image:url('mainnimage.jpeg');
+    background-blend-mode: lighten;
+    font-size: larger;
+  }
+ 

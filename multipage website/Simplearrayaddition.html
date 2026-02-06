@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Array Addition</title>
+</head>
+<body>
+
+<h2>Adding Numbers in Array</h2>
+<h4>numbers = [5, 10, 15];</h4>
+
+<button onclick="addArray()">Click to Add</button>
+<h3 id="result"></h3>
+
+<script>
+  function addArray() {
+    var numbers = [5, 10, 15]; 
+    var sum = 0;
+
+    for (var i = 0; i < numbers.length; i++) {
+      sum = sum + numbers[i];
+    }
+
+    document.getElementById("result").innerText = "Sum = " + sum;
+  }
+</script>
+
+</body>
+</html>

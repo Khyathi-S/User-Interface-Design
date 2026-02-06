@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <h3>Shopping Cart</h3>
+
+  <!-- Buttons to add items -->
+  <button onclick="addToCart('Apple', 30)">Add Apple (₹30)</button>
+  <button onclick="addToCart('Banana', 10)">Add Banana (₹10)</button>
+  <button onclick="addToCart('Mango', 50)">Add Mango (₹50)</button>
+
+  <!-- Cart item list -->
+  <ul id="cart"></ul>
+
+  <!-- Total price -->
+  <p><strong>Total: ₹<span id="total">0</span></strong></p>
+
+  <script>
+    let total = 0; // Keeps track of total cost
+
+    function addToCart(item, price) {
+      const cart = document.getElementById("cart"); // Get cart list
+      const li = document.createElement("li"); // Create a list item
+      li.textContent = `${item} - ₹${price}`; // Show item name and price
+      cart.appendChild(li); // Add it to the cart
+
+      total += price; // Increase total
+      document.getElementById("total").textContent = total; // Update total display
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Array Elements Dynamically</title>
+</head>
+<body>
+  <h2>Enter numbers separated by commas</h2>
+  <input type="text" id="arrayInput" placeholder="e.g. 10, 20, 30, 40">
+  <button onclick="calculateSum()">Calculate Sum</button>
+
+  <h3 id="result"></h3>
+
+  <script>
+    function calculateSum() {
+      const input = document.getElementById("arrayInput").value;
+      const arr = input.split(",").map(Number); // Convert string to number array
+      let sum = 0;
+
+      for (let num of arr) {
+        if (!isNaN(num)) {
+          sum += num;
+        }
+      }
+
+      document.getElementById("result").innerText = "Sum of array elements: " + sum;
+    }
+  </script>
+</body>
+</html>

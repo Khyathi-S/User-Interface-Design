@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countries & Capitals</title>
+</head>
+<body>
+
+  <h3>Type a Country:</h3>
+  <input list="countries" id="countryInput" oninput="findCapital()">
+
+  <datalist id="countries">
+    <option value="India">
+    <option value="Japan">
+    <option value="France">
+    <option value="Brazil">
+    <option value="Canada">
+  </datalist>
+
+  <h3 id="result"></h3>
+
+  <script>
+    function findCapital() {
+      const country = document.getElementById("countryInput").value.trim(); // trim to clean spaces
+      const result = document.getElementById("result");
+
+      if (country === "India") {
+        result.innerText = "Capital: New Delhi";
+      } else if (country === "Japan") {
+        result.innerText = "Capital: Tokyo";
+      } else if (country === "France") {
+        result.innerText = "Capital: Paris";
+      } else if (country === "Brazil") {
+        result.innerText = "Capital: Brasília";
+      } else if (country === "Canada") {
+        result.innerText = "Capital: Ottawa";
+      } else if (country === "") {
+        result.innerText = "";
+      } else {
+        result.innerText = "Sorry, capital not found.";
+      }
+    }
+  </script>
+
+</body>
+</html>

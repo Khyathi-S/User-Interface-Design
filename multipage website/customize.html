@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dress Customization Form</title>
+  <link rel="stylesheet" href="styless.css">
+  <style>body{
+    background-image: url('mainnimage.jpeg');
+    background-size: 75%;
+}
+</style>
+</head>
+<body >
+  <div class="form-container">
+    <h2>Customize Your Dress</h2>
+    <form action="/submit-dress-customization" method="post">
+      <label for="dress-type">Dress Type:</label>
+      <select id="dress-type" name="dress-type" required>
+        <option value="gown">Gown</option>
+        <option value="lehenga">Lehenga</option>
+        <option value="saree">Saree</option>
+        <option value="jumpsuit">casual formals</option>
+      </select>
+
+      <label for="fabric">Fabric:</label>
+      <select id="fabric" name="fabric" required>
+        <option value="silk">Silk</option>
+        <option value="cotton">Cotton</option>
+        <option value="chiffon">Chiffon</option>
+        <option value="velvet">Velvet</option>
+      </select>
+
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" required>
+
+      <label for="size">Size:</label>
+      <input type="text" id="size" name="size" placeholder="Enter size (e.g., M, L, XL)" required>
+
+      <label for="details">Additional Details:</label>
+      <textarea id="details" name="details" rows="4" placeholder="Describe your specifications here..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
